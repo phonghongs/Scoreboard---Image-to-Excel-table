@@ -53,6 +53,10 @@ class Ui_MainWindow(object):
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
+        self.cImage.clicked.connect(self.openDialog)    # event khi nhan button ne
+        self.start.clicked.connect(self.StartProcess)
+        self.save.clicked.connect(self.SaveFunc)
+
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
